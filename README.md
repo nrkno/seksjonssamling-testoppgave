@@ -10,7 +10,7 @@ Kjøre en testfil: npx playwright test navn-på-testfil.spec.ts
 
 
 ## Oppgave 1
-Vi begynner lett. Lag en test som sjekker at de tre dropdown-menyene er enablet. Dere trenger kun å fylle inn metode for å lokalisere elementene. Les mer om hvilke metoder som er tilgjengelige [her](https://playwright.dev/docs/locators), og om assertions [her](https://playwright.dev/docs/api/class-playwrightassertions#playwright-assertions-expect-locator). Husk at man alltid bør velge mest mulig unike kjennetegn, som det er lavest sannsynlighet for at vil endres uten forvarsel.
+Vi begynner lett. Lag en test som sjekker at de en av de tre dropdown-menyene er enablet og de to andre disablet. Dere trenger kun å fylle inn metode for å lokalisere elementene. Les mer om hvilke metoder som er tilgjengelige [her](https://playwright.dev/docs/locators), og om assertions [her](https://playwright.dev/docs/api/class-playwrightassertions#playwright-assertions-expect-locator). Husk at man alltid bør velge mest mulig unike kjennetegn, som det er lavest sannsynlighet for at vil endres uten forvarsel.
 
 ## Oppgave 2
 Vi øker vanskelighetsgraden litt - kanskje? Følg instruksene i test nummer 2. Også i denne oppgaven bør det finnes en del gode tips på siden det refereres til over. Og selv om Playwright er mye bedre enn mange testrammeverk på auto-venting kan det være at man må hjelpe litt på vei av og til, mer om det blant annet [her](https://playwright.dev/docs/api/class-locator#locator-wait-for).
