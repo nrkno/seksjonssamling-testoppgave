@@ -26,7 +26,6 @@ test.describe('NRK Skole', () => {
 
     // sjekk at antall klipp som vises stemmer overens med antall klipp i teksten
  
-
     // klikk på klippet med tittel "Peppernøtter" og verifiser at spilleren åpnes
 
     // ekstraoppgave: verifiser at klippet har startet
