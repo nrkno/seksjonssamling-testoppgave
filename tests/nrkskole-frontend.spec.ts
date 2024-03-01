@@ -37,7 +37,7 @@ test.describe('NRK Skole', () => {
     await expect(page.locator('.media-viewer--title')).toHaveText('Peppernøtter')
     // ekstraoppgave: verifiser at klippet har startet
     await page.waitForTimeout(1000)
-    expect(await page.locator('.nrkno-player-playpause-button').getAttribute('aria-label')).toBe('Pause')
+    expect(page.locator('.nrkno-player-playpause-button')).toHaveAttribute('aria-label', 'Pause')
   })
 
   test.only('#3: kommunikasjon med backend', async ({page}) => {
@@ -64,7 +64,7 @@ test.describe('NRK Skole', () => {
     let countButtons = await page.locator('.media-result-objective .media-result-card').count()
     expect(await reqJson.total).toEqual(countButtons)
 
-    // finn klippet med Peppernøtter i _embedded-listen i kallet
+    // Hvis tid: finn klippet med Peppernøtter i _embedded-listen i kallet
 
     // åpne klippet
 
