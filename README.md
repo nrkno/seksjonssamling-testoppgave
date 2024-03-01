@@ -8,12 +8,13 @@ Kjøre alle: npx playwright test
 Kjøre en testfil: npx playwright test navn-på-testfil.spec.ts
 ```
 
+De mest relevante metodene for disse oppgavene finner dere i heftet som blir delt ut. 
 
 ## Oppgave 1
-Vi begynner lett. Lag en test som sjekker at de tre dropdown-menyene er enablet. Dere trenger kun å fylle inn metode for å lokalisere elementene. Les mer om hvilke metoder som er tilgjengelige [her](https://playwright.dev/docs/locators), og om assertions [her](https://playwright.dev/docs/api/class-playwrightassertions#playwright-assertions-expect-locator). Husk at man alltid bør velge mest mulig unike kjennetegn, som det er lavest sannsynlighet for at vil endres uten forvarsel.
+Vi begynner lett. Lag en test som sjekker at en av de tre dropdown-menyene er enablet og to disablet. Dere trenger kun å fylle inn metode for å lokalisere elementene. Les mer om hvilke metoder som er tilgjengelige [her](https://playwright.dev/docs/locators), og om assertions [her](https://playwright.dev/docs/api/class-playwrightassertions#playwright-assertions-expect-locator), eller i heftet. Husk at man alltid bør velge mest mulig unike kjennetegn, som det er lavest sannsynlighet for at vil endres uten forvarsel.
 
 ## Oppgave 2
-Vi øker vanskelighetsgraden litt - kanskje? Følg instruksene i test nummer 2. Også i denne oppgaven bør det finnes en del gode tips på siden det refereres til over. Og selv om Playwright er mye bedre enn mange testrammeverk på auto-venting kan det være at man må hjelpe litt på vei av og til, mer om det blant annet [her](https://playwright.dev/docs/api/class-locator#locator-wait-for).
+Vi øker vanskelighetsgraden litt - kanskje? Følg instruksene i test nummer 2. Også i denne oppgaven bør det finnes en del gode tips i heftet. Og selv om Playwright er mye bedre enn mange testrammeverk på auto-venting kan det være at man må hjelpe litt på vei av og til, mer om det blant annet [her](https://playwright.dev/docs/api/class-locator#locator-wait-for).
 
 ## Oppgave 3
-Dette blir en slags hybridoppgave der vi bruker kallene vi kan finne i Network for å verifisere at informasjon om et klipp vises riktig ut på siden. Så dette vil ikke være rene backendtester, men litt av begge. Det er allerede satt opp en base for å sende requester i filen "nrkskole-backend.spec.ts", mer informasjon om metoder [her](https://playwright.dev/docs/api/class-apirequestcontext), og hvordan håndtere responser [her](https://playwright.dev/docs/api/class-apiresponse)
+Dette blir en slags hybridoppgave der vi bruker kallene vi kan finne i Network for å verifisere at informasjon om et klipp vises riktig ut på siden. Så dette vil ikke være rene backendtester, men litt av begge. Det er allerede satt opp en base for å sende requester i oppgave 3, mer informasjon om metoder [her](https://playwright.dev/docs/api/class-apirequestcontext), og hvordan håndtere responser [her](https://playwright.dev/docs/api/class-apiresponse). Det meste finner dere også selvfølgelig i heftet. 
