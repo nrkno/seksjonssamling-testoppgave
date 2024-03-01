@@ -1,9 +1,17 @@
 import {APIRequestContext, expect, request, test} from '@playwright/test'
 
+test.use({
+  browserName: 'firefox'
+})
+
 test.describe('NRK Skole', () => {
   test.beforeEach(async ({page}) => {
     await page.goto('https://www.preprod.nrk.no/skole')
     await page.locator('.menu h2').waitFor()
+  })
+
+  test.afterEach(async ({page}) => {
+    await page.close()
   })
 
   test('#1: se at alle dropdowns er enablet og disablet', async ({ page }) => {
@@ -32,7 +40,7 @@ test.describe('NRK Skole', () => {
 
   })
 
-  test.only('#3: kommunikasjon med backend', async ({ page }) => {
+  test('#3: kommunikasjon med backend', async ({ page }) => {
     const requestUrl = 'https://nrkno-skole-prod.kube.nrk.no/skole/api/media/'
     let context: APIRequestContext = await request.newContext()
 
