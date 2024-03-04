@@ -6,7 +6,7 @@ test.use({
 
 test.describe('NRK Skole', () => {
   test.beforeEach(async ({page}) => {
-    await page.goto('https://www.preprod.nrk.no/skole')
+    await page.goto('https://www.nrk.no/skole')
     await page.locator('.menu h2').waitFor()
   })
 
