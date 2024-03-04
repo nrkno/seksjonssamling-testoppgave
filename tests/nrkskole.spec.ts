@@ -1,5 +1,7 @@
 import {APIRequestContext, expect, request, test} from '@playwright/test'
 
+test.use({browserName: 'firefox'})
+
 test.describe('NRK Skole', () => {
   test.beforeEach(async ({page}) => {
     await page.goto('https://www.preprod.nrk.no/skole')
@@ -40,7 +42,7 @@ test.describe('NRK Skole', () => {
     expect(page.locator('.nrkno-player-playpause-button')).toHaveAttribute('aria-label', 'Pause')
   })
 
-  test.only('#3: kommunikasjon med backend', async ({page}) => {
+  test('#3: kommunikasjon med backend', async ({page}) => {
     const requestUrl = 'https://nrkno-skole-prod.kube.nrk.no/skole/api/media/'
     let context: APIRequestContext = await request.newContext()
 
